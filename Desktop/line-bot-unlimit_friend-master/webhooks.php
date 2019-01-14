@@ -3,7 +3,7 @@
 require "vendor/autoload.php";
 require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
 
-$access_token = '*Channel access token*';
+$access_token = 'R1jBvQtCkQTBwiVS+ECHJ49ol8lzRuQYWyXzMgFDs4/+BkydsBp1+244awYuTiWloDD6L/jlxiMQHz2v/t6apn3BIxbxpzjPWg8HdNLi784/HV0zcj7IHloWmE969jmdV9+3h39wKJUXYvF4TTmzNgdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -45,8 +45,8 @@ if (!is_null($events['events'])) {
 	}
 }
 require "vendor/autoload.php";
-$channelSecret = '*Channel secret*';
-$pushID = '*YourUserID*';
+$channelSecret = 'f10c8f84376178ef7bf5cc7533f9a820';
+$pushID = 'U406d122cc1027e9547e36045abdf1c31';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($text2);
